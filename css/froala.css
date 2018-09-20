@@ -1,0 +1,64 @@
+a.fr-fic.fr-strong {
+    font-weight: 700;
+}
+a.fr-fic.fr-green {
+    color: green;
+}
+/**
+ * Link style.
+ */
+img.fr-fic {
+    position: relative;
+    max-width: 100%;
+}
+img.fr-fic.fr-dib {
+    margin: 5px auto;
+    display: block;
+    float: none;
+    vertical-align: top;
+}
+img.fr-fic.fr-dib.fr-fil {
+    margin-left: 0;
+}
+.fr-fir {
+    margin-right: 0;
+}
+img.fr-view.fr-dib {
+    display: inline-block;
+    float: none;
+    vertical-align: bottom;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: calc(100% - (2 * 5px));
+}
+img.fr-view.fr-dib.fr-fil {
+    float: left;
+    margin: 5px 5px 5px 0;
+    max-width: calc(100% - 5px);
+}
+img.fr-fic.fr-dib.fr-fir {
+    float: right;
+    margin: 5px 0 5px 5px;
+    max-width: calc(100% - 5px);
+}
+img.fr-fic.fr-rounded {
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+img.fr-fic.fr-bordered {
+    border: solid 10px #CCC;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+img.fr-fic.fr-dib.fr-fir,img.fr-fic.fr-dib,img.fr-fic.fr-dib.fr-fil,
+video.fr-draggable.fr-fvc.fr-dvi,video.fr-draggable {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}

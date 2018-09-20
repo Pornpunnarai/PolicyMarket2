@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>SPP register</title>
+
+    <head>
+
+        <title>SPP register</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/png" href="images/icons/favicon.png">
+
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+
+        <link rel="stylesheet" type="text/css" href="vendor/MagnificPopup/magnific-popup.css">
+
+        <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+
+        <link rel="stylesheet" type="text/css" href="css/util.css">
+
+        <link rel="stylesheet" type="text/css" href="css/grid.css">
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+        <script src="https://unpkg.com/sweetalert2@7.17.0/dist/sweetalert2.all.js"></script>
+
+    <style>
+
+        @font-face {
+
+            font-family: 'lato-black';
+
+            src: url('fonts/Lato/Lato-Regular.ttf');
+
+        }
+
+        @font-face {
+
+            font-family: 'lato-Bold';
+
+            src: url('fonts/Lato/Lato-Bold.ttf');
+
+        }
+
+
+
+        @font-face {
+
+            font-family: 'lato-Black-Italic';
+
+            src: url('fonts/Lato/Lato-Light.ttf');
+
+        }
+
+
+
+        @media (min-width: 320px) and (max-width: 480px) {
+
+            div.item-slick1.bg-overlay1 {
+
+                background-image: url(img/mobilepage.png);
+
+            }
+
+
+
+            div.fixbutton-mobile{
+
+                text-align: center;
+
+                position:fixed;
+
+                bottom: 13%;
+
+                margin:0px auto;
+
+            }
+
+
+
+            button.register,button.download{
+
+                background-color: #00b237;
+
+                border-color: #00b237;
+
+                font-size: 14px;
+
+                border-radius: 25px;
+
+                color: white;
+
+                padding: 8px;
+
+                margin-bottom: 20px;
+
+                font-family: 'lato-black';
+
+            }
+
+
+
+            button.download{
+
+                padding-left: 25px;
+
+                padding-right: 25px;
+
+            }
+
+
+
+            button.register{
+
+                padding-left: 15px;
+
+                padding-right: 15px;
+
+            }
+
+
+
+            .text-regis{
+
+                color: black;
+
+            }
+
+
+
+            .or{
+
+                width: 55%;
+
+                margin-bottom: -120px;
+
+            }
+
+
+
+            div.fixbutton{
+
+                display: none;
+
+            }
+
+
+
+        }
+
+
+
+        @media (min-width: 481px) and (max-width: 1024px){
+
+
+
+            div.item-slick1.bg-overlay1 {
+
+
+
+                background-image: url(img/tabletpage.png);
+
+
+
+            }
+
+
+
+            .item-slick1 {
+
+
+
+                height: calc(100vh) !important;
+
+
+
+            }
+
+
+
+            div.fixbutton{
+
+
+
+                text-align: center;
+
+
+
+                position:fixed;
+
+
+
+                bottom: 25%;
+
+
+
+                margin:0px auto;
+
+
+
+            }
+
+
+
+
+
+
+
+            button.register,button.download{
+
+
+
+                background-color: #00b237;
+
+
+
+                border-color: #00b237;
+
+
+
+                font-size: 17px;
+
+
+
+                border-radius: 25px;
+
+
+
+                color: white;
+
+
+
+                padding: 8px;
+
+
+
+                margin-bottom: 20px;
+
+
+
+                font-family: 'lato-black';
+
+
+
+            }
+
+
+
+            button.download{
+
+
+
+                padding-left: 25px;
+
+
+
+                padding-right: 25px;
+
+
+
+            }
+
+
+
+
+
+
+
+            button.register{
+
+
+
+                padding-left: 15px;
+
+
+
+                padding-right: 15px;
+
+
+
+            }
+
+
+
+
+
+
+
+            .text-regis{
+
+
+
+                color: black;
+
+
+
+            }
+
+
+
+            .hr{
+
+
+
+                width: 25%;
+
+
+
+            }
+
+
+
+            .or{
+
+
+
+                width: 6%;
+
+
+
+            }
+
+
+
+            .line{
+
+
+
+                margin-bottom: 1.5vh;
+
+
+
+            }
+
+            .fixbutton-mobile{
+
+                display: none;
+
+            }
+
+        }
+
+
+
+        @media (min-width: 1025px) {
+
+            div.item-slick1.bg-overlay1 {
+
+                background-image: url(img/pcpage.png);
+
+            }
+
+
+
+            div.fixbutton{
+
+                text-align: center;
+
+                top:11%;
+
+                margin:0px auto;
+
+                margin-top: 100px;
+
+                margin-left: 66%;
+
+
+
+            }
+
+
+
+            button.download,button.register{
+
+                background-color: #00b237;
+
+                border-color: #00b237;
+
+                padding: 12px;
+
+                font-size: 18px;
+
+                font-family: 'lato-black';
+
+                color: white;
+
+            }
+
+            button.download{
+
+                padding-left: 30px;
+
+                padding-right: 30px;
+
+                border-radius: 25px;
+
+                margin-bottom: 20px;
+
+
+
+            }
+
+
+
+            button.register{
+
+                padding-left: 20px;
+
+                padding-right: 20px;
+
+                border-radius: 25px;
+
+                margin-top: 10px;
+
+                margin-bottom: 25px;
+
+            }
+
+
+
+            .hr{
+
+                width: 35%;
+
+            }
+
+            .or{
+
+                width: 10%;
+
+            }
+
+
+
+            .fixbutton-mobile{
+
+                display: none;
+
+            }
+
+        }
+
+
+
+        hr{
+
+            border-top: 2px solid rgb(205, 205, 205);
+
+        }
+
+        div.swal2-popup.swal2-modal.swal2-show{
+
+            width: 400px;
+
+            height: 400px;
+
+        }
+
+    </style>
+
+
+
+</head>
+
+
+
+<body>
+
+    <div class="wrap-slick1 rs2-slick1">
+
+        <div class="slick1">
+
+            <div class="item-slick1 bg-overlay1">
+
+                <div class="flex-m justify-content-center">
+
+                    <div class="fixbutton">
+
+                        <h4 class="text-regis"><b>Register</b></h4><br>
+
+                        <a href="register.php">
+
+                        <button class="btn register">Register now</button><br>
+
+                        </a>
+
+                        <p class="line">
+
+                            <img class="hr" src="img/hr.png">&nbsp;&nbsp;&nbsp;
+
+                            <img class="or" src="img/or1.png">&nbsp;&nbsp;&nbsp;
+
+                            <img class="hr"src="img/hr.png">
+
+                        </p>
+
+
+
+                        <h4 class="text-regis"><b>Conference Material</b></h4><br>
+
+
+
+                        <a href="Material/PolicyMarketPoster.pdf" download>
+
+                            <button class="btn download"><b>Download</b></button><br>
+
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="row fixbutton-mobile" style="justify-content: center;">
+
+                        <div class="col-xs-5">
+
+                            <br>
+
+                            <h5 class="text-regis"><b>Register</b></h5><br>
+
+                            <a href="register.php">
+
+                                <button class="btn register">Register now</button><br>
+
+                            </a>
+
+
+
+                        </div>
+
+
+
+                        <div class="col-xs-2">
+
+                            <img class="or" src="img/or1.png">&nbsp;&nbsp;&nbsp;
+
+                        </div>
+
+
+
+                        <div class="col-xs-5">
+
+                            <h5 class="text-regis"><b>Conference<br>Material</b></h5><br>
+
+
+
+                            <a href="Material/PolicyMarketPoster.pdf" download>
+
+                                <button class="btn download"><b>Download</b></button><br>
+
+                            </a>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

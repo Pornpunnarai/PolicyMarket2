@@ -1,0 +1,64 @@
+i.fa-eye, i.fa-share{
+    padding: 3px;
+    /*border: 1px #9e9e9e7a solid;*/
+}
+.social-icons a {
+    display: inline-block;
+    color: #193663;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+}
+
+.mobile-social-icons a {
+    display: inline-block;
+    color: #193663;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+}
+.social-icons {
+    text-align: right;
+}
+
+/*ipad pro*/
+@media only screen and
+(min-device-width : 1024px) and
+(max-device-height : 1366px) {
+    .social-icons a {
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        height: 2.8rem;
+        width: 2.8rem;
+    }
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: #fff;
+}
+
+
+
+
+.carousel-indicators li, carousel-indicators{
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
